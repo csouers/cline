@@ -233,19 +233,11 @@ export class CerebrasHandler implements ApiHandler {
 		const modelId = this.getModel().id
 
 		switch (modelId) {
-			case "qwen-3-coder-480b":
-			case "qwen-3-coder-480b-free":
-				return { requestsPerMinute: 10, tokensPerMinute: 150_000 }
-			case "qwen-3-235b-a22b-instruct-2507":
-			case "qwen-3-235b-a22b-thinking-2507":
-				return { requestsPerMinute: 30, tokensPerMinute: 60_000 }
-			case "llama-3.3-70b":
-			case "gpt-oss-120b":
-			case "qwen-3-32b":
-				return { requestsPerMinute: 30, tokensPerMinute: 64_000 }
+			case "zai-glm-4.6":
+				return { requestsPerMinute: 250, tokensPerMinute: 250_000 }
 			default:
 				// Default rate limits for unknown models
-				return { requestsPerMinute: 30, tokensPerMinute: 60_000 }
+				return { requestsPerMinute: 1_000, tokensPerMinute: 1_000_000 }
 		}
 	}
 
