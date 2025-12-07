@@ -3295,8 +3295,8 @@ export const cerebrasModels = {
 	"llama-3.1-8b": {
 		maxTokens: 8000,
 		contextWindow: 32000,
-		inputPrice: 0.85,
-		outputPrice: 1.2,
+		inputPrice: 0.1,
+		outputPrice: 0.1,
 		supportsImages: false,
 		supportsPromptCache: false,
 		description: "Powerful model with ~2600 tokens/s",
