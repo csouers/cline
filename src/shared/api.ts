@@ -3259,8 +3259,8 @@ export const cerebrasModels = {
 	"zai-glm-4.6": {
 		maxTokens: 40000,
 		contextWindow: 131000,
-		inputPrice: 0.35,
-		outputPrice: 0.75,
+		inputPrice: 2.25,
+		outputPrice: 2.75,
 		supportsImages: false,
 		supportsPromptCache: false,
 		description: "Intelligent general purpose model with 3,000 tokens/s",
